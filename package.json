@@ -1,0 +1,48 @@
+{
+	"name": "get-files-paths",
+	"version": "1.0.2",
+	"description": "Get all file and directory.",
+	"main": "./lib/index.js",
+	"types": "./lib/index.d.ts",
+	"scripts": {
+		"cleanPublish": "clean-publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/droidxrx/get-files-paths.git"
+	},
+	"keywords": [
+		"fs",
+		"recursive",
+		"readdir",
+		"readfile",
+		"get-path",
+		"get-file",
+		"get-all-file",
+		"get-all-dir"
+	],
+	"author": "DroidXrX <droidxrx@gmail.com> (https://github.com/droidxrx)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/droidxrx/get-files-paths/issues"
+	},
+	"homepage": "https://github.com/droidxrx/get-files-paths#readme",
+	"devDependencies": {
+		"@types/node": "^16.10.2",
+		"@types/webpack": "^5.28.0",
+		"micromatch": "^4.0.4"
+	},
+	"clean-publish": {
+		"files": [
+			"yarn.lock",
+			"webpack.config.js",
+			"node_modules",
+			"src"
+		],
+		"fields": [
+			"scripts",
+			"clean-publish"
+		],
+		"packageManager": "npm"
+	}
+}
