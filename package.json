@@ -1,6 +1,6 @@
 {
 	"name": "get-files-paths",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Get all file and directory.",
 	"main": "./lib/index.js",
 	"types": "./lib/index.d.ts",
@@ -37,7 +37,9 @@
 			"yarn.lock",
 			"webpack.config.js",
 			"node_modules",
-			"src"
+			"src",
+			".gitignore",
+			".git"
 		],
 		"fields": [
 			"scripts",

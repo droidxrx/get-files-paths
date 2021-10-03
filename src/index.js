@@ -6,7 +6,7 @@ class GettingFilePath {
 	pathFile
 	ignores
 	constructor(filePath, ignore) {
-		this.pathFile = this.concat(filePath, 'File or path').map((v) => (!path.isAbsolute(v) ? path.resolve(__dirname, v) : v));
+		this.pathFile = this.concat(filePath, 'File or path').map((v) => (!path.isAbsolute(v) ? path.resolve(require.main.path, v) : v));
 		this.ignores = ignore ? this.concat(ignore, 'Ignore') : false;
 	}
 
