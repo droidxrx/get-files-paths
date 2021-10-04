@@ -5,13 +5,16 @@ module.exports = {
 	mode: 'production',
 	devtool: false,
 	cache: false,
-	entry: { index: resolve(__dirname, './src/') },
+	entry: "./src/index.js",
 	output: {
 		path: resolve(__dirname, './lib'),
-		filename: '[name].js',
+		filename: 'index.js',
 		libraryTarget: 'commonjs2',
 	},
 	target: 'node',
+	externals: {
+		"./require.main": "./require.main"
+	},
 	optimization: {
 		minimize: true,
 		minimizer: [

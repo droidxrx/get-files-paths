@@ -1,6 +1,6 @@
 {
 	"name": "get-files-paths",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Get all file and directory.",
 	"main": "./lib/index.js",
 	"types": "./lib/index.d.ts",
@@ -43,8 +43,12 @@
 		],
 		"fields": [
 			"scripts",
-			"clean-publish"
+			"clean-publish",
+			"devDependencies"
 		],
 		"packageManager": "npm"
+	},
+	"dependencies": {
+		"require-main-filename": "^2.0.0"
 	}
 }
